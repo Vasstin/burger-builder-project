@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
 import ContactData from './ContactData/ContactData';
-import * as actions from '../../store/actions/index';
+// import * as actions from '../../store/actions/index';
 class Checkout extends Component {
 
   checkoutCancelledHandler = () => {
@@ -48,10 +48,10 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onInitPurchase: () => dispatch(actions.purchaseInit())
-  }
-} 
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     onInitPurchase: () => dispatch(actions.purchaseInit())
+//   }
+// } 
 
 export default connect(mapStateToProps)(Checkout);
